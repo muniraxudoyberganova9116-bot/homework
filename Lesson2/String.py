@@ -1,4 +1,55 @@
-"""### String Questions:
+### Number Data Type Questions:
+
+#1. Create a program that takes a float number as input and rounds it to 2 decimal places.
+
+a =float(input("Enter a float number: "))
+rounded_a = round(a, 2)
+print("Rounded number to 2 decimal places:", rounded_a)
+
+#2. Write a Python file that asks for three numbers and outputs the largest and smallest.
+num1 = float(input("Enter the first number: "))
+num2 = float(input("Enter the second number: "))
+num3 = float(input("Enter the third number: ")) 
+largest = max(num1, num2, num3)
+smallest = min(num1, num2, num3)
+print("The largest number is:", largest)
+print("The smallest number is:", smallest)
+
+#3. Create a program that converts kilometers to meters and centimeters.
+km = float(input("Enter the distance in kilometers: "))
+m = km * 1000
+cm = km * 100000
+print("Distance in meters:", m)
+print("Distance in centimeters:", cm)
+
+#4. Write a program that takes two numbers and prints out the result of integer division and the remainder.
+num1 = float(input("Enter the first number: "))
+num2 = float(input("Enter the second number: "))
+div = num1 // num2
+rem = num1 % num2
+print("Result of integer division:", div)
+print("Remainder:", rem)
+
+#5. Make a program that converts a given Celsius temperature to Fahrenheit.
+celsius = float(input("Enter the temperature in Celsius: "))
+fahrenheit = (celsius * 9/5) + 32
+print("Temperature in Fahrenheit:", fahrenheit)
+
+#6. Create a program that accepts a number and returns the last digit of that number.
+num = int(input("Enter a number: "))
+last_digit = num % 10
+print("The last digit of the number is:", last_digit)
+
+#7. Create a program that takes a number and checks if it’s even or not.
+num = int(input("Enter a number: "))
+if num % 2 == 0:
+    print("The number is even.")
+else:
+    print("The number is odd.") 
+
+
+
+### String Questions:
 
 #1. Create a program to ask name and year of birth from user and tell them their age.
 
@@ -109,7 +160,7 @@ else:
 words_list = input("Enter a list of words separated by spaces: ").split()
 separator = input("Enter the separator character: ")
 result = separator.join(words_list)
-print("Joined string:", result)"""
+print("Joined string:", result)
 
 #13. Ask the user for a string and remove all spaces from it.  
 user_string = input("Enter a string: ")
@@ -157,3 +208,56 @@ if user_string.startswith(start_word) and user_string.endswith(end_word):
     print("The string starts with the specified word and ends with the specified word.")
 else:    
     print("The string does not start with the specified word and/or does not end with the specified word.")    
+
+
+### Boolean Data Type Questions:
+#1. Write a program that accepts a username and password and checks if both are not empty.
+username = input("Enter your username: ")
+password = input("Enter your password: ")   
+if username!=" " and password!="":
+    print("Username and password are valid.")
+else:
+    print("Username and password cannot be empty.")
+
+#2. Create a program that checks if two numbers are equal and outputs a message if they are.
+num1 = int(input("Enter the first number: "))
+num2 = int(input("Enter the second number: "))
+if num1 == num2:
+    print("The two numbers are equal.")
+else:
+    print("The two numbers are not equal.")
+
+#3. Write a program that checks if a number is positive and even.
+number = int(input("Enter a number: "))
+if number > 0 and number % 2 == 0:
+    print("The number is positive and even.")
+else:
+    print("The number is not positive and even.")   
+#4. Write a program that takes three numbers and checks if all of them are different.
+num1 = int(input("Enter the first number: "))
+num2 = int(input("Enter the second number: "))
+num3 = int(input("Enter the third number: "))
+if num1 != num2 and num1 != num3 and num2 != num3:
+    print("All three numbers are different.")
+else:
+    print("Not all three numbers are different.")       
+#5. Create a program that accepts two strings and checks if they have the same length.
+string1 = input("Enter the first string: ")
+string2 = input("Enter the second string: ")
+if len(string1) == len(string2):
+    print("The two strings have the same length.")
+else:
+    print("The two strings do not have the same length.")   
+#6. Create a program that accepts a number and checks if it’s divisible by both 3 and 5.
+number = int(input("Enter a number: "))
+if number % 3 == 0 and number % 5 == 0:     
+    print("The number is divisible by both 3 and 5.")
+else:
+    print("The number is not divisible by both 3 and 5.")   
+#7. Write a program that checks if the sum of two numbers is greater than 50.
+num1 = int(input("Enter the first number: "))
+num2 = int(input("Enter the second number: "))
+if num1 + num2 > 50:
+    print("The sum of the two numbers is greater than 50.")
+else:    
+    print("The sum of the two numbers is not greater than 50.")
