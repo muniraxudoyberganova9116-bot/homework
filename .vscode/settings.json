@@ -1,0 +1,25 @@
+{
+    "editor.semanticHighlighting.enabled": true,
+    "python.languageServer": "Pylance",
+    "python.analysis.typeCheckingMode": "basic",
+    "editor.tokenColorCustomizations": {
+        "semanticHighlighting": true
+    },
+    "editor.semanticTokenColorCustomizations": {
+        "enabled": true,
+        "rules": {
+            "variable": "#9CDCFE",
+            "variable.readonly": "#4FC1FF",
+            "parameter": "#9CDCFE",
+            "property": "#CE9178",
+            "function": "#DCDCAA",
+            "method": "#DCDCAA",
+            "class": "#4EC9B0",
+            "type": "#4EC9B0",
+            "namespace": "#4EC9B0",
+            "enumMember": "#B5CEA8",
+            "enum": "#B5CEA8",
+            "keyword": "#C586C0"
+        }
+    }
+}
