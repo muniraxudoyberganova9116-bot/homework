@@ -1,6 +1,6 @@
 {
     "editor.semanticHighlighting.enabled": true,
-    "python.languageServer": "Pylance",
+    "python.languageServer": "Jedi",
     "python.analysis.typeCheckingMode": "basic",
     "editor.tokenColorCustomizations": {
         "semanticHighlighting": true
